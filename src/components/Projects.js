@@ -17,8 +17,8 @@ export const Project = ()=>{
             Base: MP,
         },
         {
-            title: "Ortho Care",
-            description: "SQL Database System",
+            title: "Health Centre Management System",
+            description: "Database + Documentation Of SDLC",
             Base: HCMS,
         },
     ];
@@ -53,7 +53,7 @@ export const Project = ()=>{
                                             <h6 class="carousel-item__details--subtitle">{projects.at(0).description}</h6>
                                             <div className="proj-inside">
                                                 <p>Download Documentation</p>
-                                                <a class="BtnDown" href="SECDoc.pdf" download={"OK"}>
+                                                <a class="BtnDown" href="Ride Your Style.pdf" download={"Ride Your Style Documentation"}>
                                                 <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
                                                 <span class="icon2"></span>
                                                 <span class="tooltip">Download</span>
@@ -78,7 +78,7 @@ export const Project = ()=>{
                                             <h6 class="carousel-item__details--subtitle">{projects.at(1).description}</h6>
                                             <div className="proj-inside">
                                                 <p>Download Documentation</p>
-                                                <a class="BtnDown" href="SECDoc.pdf" download={"OK"}>
+                                                <a class="BtnDown" href="Music Player.pdf" download={"Music Player Documentation"}>
                                                 <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
                                                 <span class="icon2"></span>
                                                 <span class="tooltip">Download</span>
@@ -88,7 +88,7 @@ export const Project = ()=>{
                                     </a>
                                 </div>
                                 <div class="carousel-items">
-                                    <a href="https://github.com/MMuneebZaidi/RideYourStyle">
+                                    <a href="https://github.com/MMuneebZaidi/Health-Center-Management-System-SEC-">
                                         <img
                                             class="carousel-item__img"
                                             src={projects.at(2).Base}
