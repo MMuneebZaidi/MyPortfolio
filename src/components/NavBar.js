@@ -29,11 +29,11 @@ export const NavBar = ({scrolled,footerVisible}) =>{
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Row><div style={{paddingLeft:70}}></div></Row>
+                    <Row><div ></div></Row>
                     <Nav.Link href="#homepage" className={activeLink==='home'?'active navbar-link':'navbar-link'} onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
                     <Nav.Link href="#skills" className={activeLink==='skills'?'active navbar-link':'navbar-link'} onClick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
                     <Nav.Link href="#projects" className={activeLink==='projects'?'active navbar-link':'navbar-link'} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
-                    <Row><div style={{paddingLeft:750}}></div></Row>
+                    <Row><div ></div></Row>
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">

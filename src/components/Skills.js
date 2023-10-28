@@ -39,7 +39,6 @@ export const Skills = () => {
                                     <ProgressBar title="JAVA" percentage={95} colorClass="shadow-java" />
                                     <ProgressBar title="C #" percentage={90} colorClass="shadow-csharp" />
                                     <ProgressBar title="C/C++" percentage={90} colorClass="shadow-ccpp" />
-                                  
                                 </div>
                             </Carousel.Item>
                             <Carousel.Item>

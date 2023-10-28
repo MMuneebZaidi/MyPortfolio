@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
 import React, { useRef } from 'react';
@@ -11,16 +11,16 @@ export const ContactME = () => {
         email: '',
         phone: '',
         message: ''
-      }
-      const [formDetails, setFormDetails] = useState(formInitialDetails);
-      const [buttonText, setButtonText] = useState('Send');
-      const onFormUpdate = (category, value) => {
-          setFormDetails({
+    }
+    const [formDetails, setFormDetails] = useState(formInitialDetails);
+    const [buttonText, setButtonText] = useState('Send');
+    const onFormUpdate = (category, value) => {
+        setFormDetails({
             ...formDetails,
             [category]: value
-          })
-      }
-      const handleSubmit = async (e) => {
+        })
+    }
+    const handleSubmit = async (e) => {
         if(formDetails.firstName===''||formDetails.lastName===''||formDetails.email===''||formDetails.phone===''||formDetails.message===''){
             e.preventDefault();
             setButtonText("Enter Details");
@@ -44,27 +44,37 @@ export const ContactME = () => {
             setTimeout(() => { 
                 setButtonText("Send");
             }, 5000);
-        }
-        
-        
-      };
-      const form = useRef();
-
+        }  
+    };
+    const form = useRef();
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 760);
+        };
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return(
         <section className="contact" id="connect">
         <Container>
             <Row className="align-items-center">
+            {!isMobile && (
             <Col size={12} md={6}>
-                <TrackVisibility>
+              <TrackVisibility>
                 {({ isVisible }) =>
-                    <div className={isVisible ? "animate__animated animate__zoomIn contactme" : ""}  />
+                  <div className={isVisible ? "animate__animated animate__zoomIn contactme" : "hidden"}  />
                 }
-                </TrackVisibility>
+              </TrackVisibility>
             </Col>
+          )}
             <Col size={12} md={6}>
-                <TrackVisibility>
+                <TrackVisibility offset={150}>
                 {({ isVisible }) =>
-                    <div className={isVisible ? "animate__animated animate__zoomIn" : "animate__animated animate__zoomOut"}>
+                    <div className={`animate__animated ${isVisible ? "animate__zoomIn" : "animate__zoomOut"}`}>
                     <h2>Get In Touch</h2>
                     <form ref={form} onSubmit={handleSubmit}>
                     <Row>

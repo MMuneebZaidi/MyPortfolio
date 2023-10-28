@@ -34,16 +34,11 @@ body{
 
 nav.navbar{
   background-color: #0a0a0a ;
-  padding: 15px 350px 15px 0;
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 9999;
   transition:  0.22s ease-in-out;
 }
 
 nav.navbar.scrolled {
-  padding: 0px 350px 0px 0;
   background-color: #000000;
 }
 
@@ -187,7 +182,10 @@ nav.navbar .btn-53,
   transition-delay: 0.5s;
 }
 
-
+.bnnr{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 nav.navbar .navbar-nav .nav-link.navbar-link:hover,
 nav.navbar .navbar-nav .nav-link.navbar-link:active{
@@ -199,6 +197,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link:active{
 }
 span.navbar-text{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     color: #ffffff;
 }
@@ -229,6 +228,7 @@ span.navbar-text{
   transform: scale(0);
   transition: 0.15s ease-in-out;
 }
+
 .social-icon a:hover::before {
   transform: scale(1);
 }
@@ -251,7 +251,6 @@ nav.navbar .navbar.logo{
     text-shadow: 0 0 10px #fff, 0 0 15px #ff3434, 0 0 20px #ff3434, 0 0 25px #ff3434, 0 0 35px #ff3434, 0 0 45px #ff3434, 0 0 55px #ff3434;
   }
 }
-
 
 .banner {
   margin-top: 0;
@@ -302,14 +301,17 @@ nav.navbar .navbar.logo{
   line-height: 1.5em;
   width: 96%;
   padding-left: 7px;
+  text-align: justify;
 }
 
 /*Banner Side*/
-
+.canvasBanner{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
 canvas {
-  position: relative;
-  left: 100%;
-  margin-left: -40vmin;
+  
   margin-top: 3vmin;
   width: 400px;
   height: 400px;
@@ -471,8 +473,10 @@ canvas {
 /* Container styles */
 .rowSkill {
   width: auto;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding-bottom: 80px;
 }
 
@@ -1032,11 +1036,42 @@ canvas {
 }
 
 /****  Contact Me  ****/
+@media (max-width: 767px) {
+  .contact {
+    margin-top: 100px;
+    padding: 30px 0 100px 0;
+  }
+
+  .contactme {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    padding: 14px 18px;
+    font-size: 16px;
+  }
+
+  .contact form button {
+    font-size: 16px;
+    padding: 12px 32px;
+    margin-top: 15px;
+  }
+}
 .contact {
   margin-top: 250px;
   padding: 60px 0 200px 0;
 }
-
+.hidden{
+  display: none;
+}
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -1101,7 +1136,7 @@ canvas {
   width: 100%;
 }
 .contactme{
-  margin-left: 750px;
+  margin-left: 120%;
   width: 500px; 
   height: 300px; 
   border-radius: 0rem; 
@@ -1124,15 +1159,32 @@ canvas {
   justify-items: left;
   align-items: start;
 }
+@media(max-width:620px){
+  .contact-panel{
+    width: 100%;
+    display: grid;
+    justify-content : center;
+    align-items: center  ;
+  }
+  .social-panel{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .navi-panel{
+    width: 100%;
+    padding-left: 40px;
+  }
+}
+
 .footer-panel{
-  justify-self: left;
-  align-self: flex-start;
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .navi-panel{
-  margin-left: -200px;
-  justify-items: left;
-  align-items: start;
+  padding-left: 40px;
 }
 .navi-panel h1{
   font-size: 32px;
@@ -1154,12 +1206,12 @@ canvas {
 }
 
 .social-panel{
-  margin-left: 110px;
-  padding-right: 10px;
-  justify-items: center;
+  display: grid;
+  justify-content: center;
   align-items: center;
 }
 .social-panel h1{
+  width: 100%;
   font-size: 32px;
   padding-bottom: 10px;
   padding-top: 30px;
@@ -1189,10 +1241,10 @@ canvas {
 }
 
 .contact-panel{
-  margin-left: 350px;
-  margin-right: -250px;
-  justify-items: right;
+  display: grid;
+  justify-content : right;
   align-items: end  ;
+  padding-right: 40px;
 }
 .contact-panel h1{
   font-size: 32px;
@@ -1221,7 +1273,6 @@ canvas {
   opacity: 1;
 }
 .copyright{
-  padding-top: 190px !important;  
   margin-bottom: 0px;
   font-size: smaller;
   color: #525252;

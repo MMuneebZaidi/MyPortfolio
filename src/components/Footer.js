@@ -1,4 +1,4 @@
-import { Container,Col,Row } from "react-bootstrap"
+import { Col,Row } from "react-bootstrap"
 import github from '../assets/images/github.png';
 import insta from '../assets/images/instagram.png';
 import linkedin from '../assets/images/linkedin.png';
@@ -7,8 +7,6 @@ export const Footer = ({ footerRef }) => {
     return(
         <section ref={footerRef} className="footer">
             <div className="footer-panel">
-                <Container>
-                    <Row>
                         <Col>
                             <div className="navi-panel">
                                 <Row>
@@ -57,12 +55,12 @@ export const Footer = ({ footerRef }) => {
                                     <div><span className="contact-span-start">Phone No.</span> <span className="contact-span">:</span> <span className="bottom-nav-buttons" >+92-325-8444647</span>
                                     <br></br><span className="bottom-contact-buttons" >+92-325-8444647</span></div>
                                 </Row> 
-                                <p className="copyright">© Copyright, All Rigths Reserved.</p>
+                                
                             </div>
                         </Col>
-                    </Row>
-                </Container>
+                    
             </div>
+            <p className="copyright">© Copyright, All Rigths Reserved.</p>
         </section>
     )
 }

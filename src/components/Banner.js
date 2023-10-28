@@ -11,11 +11,11 @@ export const Banner = ()=>{
     return(
         <section className="banner" id="homepage">
              <Container>
-                <Row className="aligh-items-centre">
+                <Row className="aligh-items-centre bnnr">
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                         {({ isVisible }) =>
-                        <div className={isVisible ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}>
+                        <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                             <span className="tagline">Welcome to my Portfolio</span>
                             <h1>{`Hi! I'm Muhammad Muneeb Zaidi`} </h1>
                             <p>As a dedicated Computer Science student, I've gathered here a collection of projects and work that represent my passion for coding and problem-solving. Explore my journey through the world of software development and discover the solutions I've crafted to address real-world challenges. This digital space is a showcase of my technical skills and the results of my commitment to the art of programming.</p>
@@ -32,7 +32,7 @@ export const Banner = ()=>{
                     <Col xs={12} md={6} xl={5}>
                     <TrackVisibility>
                         {({ isVisible }) =>
-                            <div className={isVisible ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}>
+                            <div className={isVisible ? "animate__animated animate__fadeIn canvasBanner" : ""}>
                                 <CanvasComponent/>
                             </div>
                         }
