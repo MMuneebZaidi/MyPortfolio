@@ -3,7 +3,6 @@ import TrackVisibility from 'react-on-screen';
 import RYSBase from '../assets/images/RYSBase.webp';
 import MP from '../assets/images/MusicPlayer.jpg';
 import HCMS from '../assets/images/HCMS.jpg';
-
 export const Project = ()=>{
     const projects = [
         {

@@ -52,7 +52,7 @@ export const Footer = ({ footerRef }) => {
                                     <div><span className="contact-span-start">Email</span> <span className="contact-span">:</span> <span className="bottom-nav-buttons" >muneebzaidi2345@gmail.com</span></div>
                                 </Row>
                                 <Row>
-                                    <div><span className="contact-span-start">Phone No.</span> <span className="contact-span">:</span> <span className="bottom-nav-buttons" >+92-325-8444647</span>
+                                    <div><span className="contact-span-start">Phone No.</span> <span className="contact-span">:</span> <span className="bottom-nav-buttons" >+92-318-9464829</span>
                                     <br></br><span className="bottom-contact-buttons" >+92-325-8444647</span></div>
                                 </Row> 
                                 

@@ -841,7 +841,7 @@ canvas {
 
 
 .categories__title {
- color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 28px;
   position: absolute;
   padding-left: 30px;
@@ -913,6 +913,7 @@ canvas {
 }
 
 .carousel-item__details:hover {
+  overflow-x: scroll;
   opacity: 1;
 }
 
@@ -931,10 +932,12 @@ canvas {
   margin: 5px 0;
 }
 .carousel-item__details--title{
+  overflow: scroll;
   padding-top: 10px;
 }
 .carousel-item__details--subtitle{
   font-size: 16px;
+  overflow: scroll;
 }
 
 .BtnDown {
