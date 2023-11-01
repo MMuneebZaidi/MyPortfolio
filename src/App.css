@@ -887,7 +887,8 @@ canvas {
 }
 
 .carousel-item__details {
-  
+  max-width: 250px;
+  height: auto;
   background: -webkit-linear-gradient(
     linear,
     left bottom,
@@ -904,12 +905,13 @@ canvas {
   opacity: 0;
   -webkit-transition: 450ms opacity;
   transition: 450ms opacity;
-  padding: 10px;
+  padding-left: 10px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  
 }
 
 .carousel-item__details:hover {
@@ -927,16 +929,25 @@ canvas {
 
 .carousel-item__details .carousel-item__details--title,
 .carousel-item__details--subtitle {
+  
   color: #fff;
   margin: 5px 0;
 }
+
 .carousel-item__details--title{
+  white-space: normal;
   padding-top: 10px;
 }
 .carousel-item__details--subtitle{
-  font-size: 16px;
+  white-space: normal;
+  font-size: 14px;
 }
-
+.tittle-subtitle{
+  width: 250px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
 .BtnDown {
   width: 25px;
   height: 25px;

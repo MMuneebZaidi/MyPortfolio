@@ -17,7 +17,7 @@ export const Project = ()=>{
         },
         {
             title: "Health Centre Management System",
-            description: "Database + Documentation Of SDLC",
+            description: "DB + SDLC Documentation",
             Base: HCMS,
         },
     ];
@@ -48,8 +48,10 @@ export const Project = ()=>{
                                                 <span class="fas fa-play-circle"></span>
                                                 <span class="fas fa-plus-circle"></span>
                                             </div>
-                                            <h5 class="carousel-item__details--title">{projects.at(0).title}</h5>
-                                            <h6 class="carousel-item__details--subtitle">{projects.at(0).description}</h6>
+                                            <div className="tittle-subtitle">
+                                                <h5 class="carousel-item__details--title">{projects.at(0).title}</h5>
+                                                <h6 class="carousel-item__details--subtitle">{projects.at(0).description}</h6>
+                                            </div>
                                             <div className="proj-inside">
                                                 <p>Download Documentation</p>
                                                 <a class="BtnDown" href="Ride Your Style.pdf" download={"Ride Your Style Documentation"}>
@@ -73,8 +75,10 @@ export const Project = ()=>{
                                                 <span class="fas fa-play-circle"></span>
                                                 <span class="fas fa-plus-circle"></span>
                                             </div>
-                                            <h5 class="carousel-item__details--title">{projects.at(1).title}</h5>
-                                            <h6 class="carousel-item__details--subtitle">{projects.at(1).description}</h6>
+                                            <div className="tittle-subtitle">
+                                                <h5 class="carousel-item__details--title">{projects.at(1).title}</h5>
+                                                <h6 class="carousel-item__details--subtitle">{projects.at(1).description}</h6>
+                                            </div>
                                             <div className="proj-inside">
                                                 <p>Download Documentation</p>
                                                 <a class="BtnDown" href="Music Player.pdf" download={"Music Player Documentation"}>
@@ -98,8 +102,10 @@ export const Project = ()=>{
                                                 <span class="fas fa-play-circle"></span>
                                                 <span class="fas fa-plus-circle"></span>
                                             </div>
-                                            <h5 class="carousel-item__details--title">{projects.at(2).title}</h5>
-                                            <h6 class="carousel-item__details--subtitle">{projects.at(2).description}</h6>
+                                            <div className="tittle-subtitle">
+                                                <h5 class="carousel-item__details--title">{projects.at(2).title}</h5>
+                                                <h6 class="carousel-item__details--subtitle">{projects.at(2).description}</h6>
+                                            </div>
                                             <div className="proj-inside">
                                                 <p>Download Documentation</p>
                                                 <a class="BtnDown" href="HCMS Documentation.pdf" download={"HCMS Documentation"}>
